@@ -45,7 +45,7 @@ option_2 = st.selectbox(
      sorted(df_cars.select_dtypes(include=[np.number]).columns))
 
 
-st.write(f'Tu vois la distribution des donénes de {option_2} pour le continent {option}')
+st.write(f"Tu vois la distribution des données de '{option_2}' pour le continent {option}")
 
 viz_distribution = px.violin(df_cars[df_cars.continent == option], 
 								x=option_2,
